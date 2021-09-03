@@ -1,3 +1,3 @@
 public class ContactTriggerTest {
-//cambio
+//cambio 2
 }
