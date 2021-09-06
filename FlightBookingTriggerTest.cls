@@ -47,7 +47,7 @@ private class FlightBookingTriggerTest {
        Flight_Bookings__c vuelo = new Flight_Bookings__c();
        vuelo.Class__c='Turista';
        vuelo.Contact__c=contacto.id;
-	   vuelo.Departure_Date__c= DateTime.newInstance(2021,10,19);        
+	    vuelo.Departure_Date__c= DateTime.newInstance(2021,10,19);        
        vuelo.Destination__c ='Miami';
        vuelo.Origin__c ='Atenas';// poner valores que están en el picklist
        vuelo.Notes__c='ya';
