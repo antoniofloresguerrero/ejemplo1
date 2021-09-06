@@ -115,6 +115,34 @@ private class PassengerTriggerTest {
         System.assertEquals(pasajero.ID_Card__c,idCard.ID_Card__c);
     }
     
+    // caso de test positivo, 
+    // insertar un pasajero y automáticamente asociar un contacto
+
+        @isTest
+            static void asociarPositivo(){
+
+                // datos. Pasajero y Contacto
+                Contact contacto = new Contact();
+                contacto.LastName='flores';
+                contacto.Nif__c='33359409w';
+                insert contacto;
 
 
+                pasajero.Age__c=45;
+                pasajero.Flight_Bookings__c='a000900000FJYxiAAH';
+                pasajero.ID_Card__c=contacto.Nif__c;// realción con contacto
+                pasajero.Name='Antonio';
+                
+                // testeamos el pasajero
+
+                Test.startTest();
+                insert pasajero;
+                Test.stopTest();
+
+                // Verificación
+                Passenger__c pasajeroNif = [select id,ID_Card__c from Passenger__c where =:pasajero.id];
+                system.assertEquals(contacto.id,pasajeroNif);
+
+
+            }
 }
