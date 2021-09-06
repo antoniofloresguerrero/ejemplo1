@@ -90,8 +90,7 @@ private class PassengerTriggerTest {
         
     }
 // método para update
-@isTest
-    static void actualizarPasajeros(){
+@isTest static void actualizarPasajeros(){
      Passenger__c pasajero = new Passenger__c();
      pasajero.Age__c=45;
      pasajero.Flight_Bookings__c='a000900000FJYxiAAH';
