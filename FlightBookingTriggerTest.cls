@@ -28,7 +28,7 @@ private class FlightBookingTriggerTest {
         //Verificar
         
          Flight_Bookings__c vuelosVerificar = [Select Id,Account__c from Flight_Bookings__c where id=:vuelo.Id];
-    	System.assertEquals(cuenta.id,vuelosVerificar.Account__c);
+    	System.assertEquals(cuenta.id,vuelosVerificar.Account__c,'');
     }
    // verificar cambio de origen o destino 
 
@@ -63,7 +63,7 @@ private class FlightBookingTriggerTest {
 		
    	   Flight_Bookings__c vueloAVerificar = [Select Id, Modified__c from Flight_Bookings__c where Id=:vuelo.Id];
 
-	   System.assertEquals(true, vueloAverificar.Modified__c);
+	   System.assertEquals(true, vueloAverificar.Modified__c,'');
    
    }
 
