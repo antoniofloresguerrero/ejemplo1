@@ -63,7 +63,9 @@ private class PassengerTriggerTest {
     
     }
 	//Test del método Passenger.
+   
     //Caso masivo. Inserción de 300 registros
+   
     @isTest
     static void testPasajerosMasivos() {
         //Preparación de los datos a insertar
@@ -113,4 +115,6 @@ private class PassengerTriggerTest {
         System.assertEquals(pasajero.ID_Card__c,idCard.ID_Card__c);
     }
     
+
+
 }
