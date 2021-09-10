@@ -13,7 +13,7 @@ public class FlightBookingHandler {
         for(Contact contactoAsociado: contactosVuelos){
             if(contactoAsociado!=null){
                 mapaIdIContactoIdAccount.put(contactoAsociado.Id,contactoAsociado.AccountId);
-            	
+            	//cambio 
                     }
         }
         for(Flight_Bookings__c vueloCompleto : listadevuelos){
