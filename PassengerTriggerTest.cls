@@ -25,7 +25,7 @@ private class PassengerTriggerTest {
      pasajero.ID_Card__c='33359409w';
      pasajero.Name='Antonio';
      
-        //cambio
+        //cambio 1
         
         //Acción a testear
         Test.startTest();
