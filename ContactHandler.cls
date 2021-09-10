@@ -7,7 +7,8 @@ public static void comprobarNif2(List<Contact> contactos){
                 contacto.addError('Nif no válido');
             }
           
-    	// cambio 18
+    	// cambio 20 he cambiado el numero
+        
     }
         
     }
