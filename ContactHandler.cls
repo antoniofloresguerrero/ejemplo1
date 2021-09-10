@@ -8,7 +8,8 @@ public static void comprobarNif2(List<Contact> contactos){
             }
           
     	// cambio 20 he cambiado el numero
-        
+        //cambio otro
+
     }
         
     }
